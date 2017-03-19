@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>Marvel</title>
+    </head>
+</head>
+
+<body>
+    <header>
+        <div class="row">
+            <div class="col-md-12 header">
+                <h1>Marvels Big Ass Website</h1>
+                <div class="col-md-5">
+                    <div class="col-md-3 menu">
+                        <a href="index.html">HOME</a>
+                    </div>
+                    <div class="col-md-3 menu">
+                        <a href="characters.html">CHARACTERS</a>
+                    </div>
+                    <div class="col-md-3 menu">
+                        <a href="comics.html">COMICS</a>
+                    </div>
+                    <div class="col-md-3 menu">
+                        <a href="contact.html">CONTACT</a>
+                    </div>
+                </div>
+                <div class="mobilemenu">
+                  <i class="fa fa-bars" id="bars" aria-hidden="true"></i>
+                  <ul class="menuBars" id="jsmenu">
+                      <li><a href="index.html">HOME</a></li>
+                      <li><a href="characters.html">CHARACTERS</a></li>
+                      <li><a href="comics.html">COMICS</a></li>
+                      <li><a href="contact.html">CONTACT</a></li>
+                  </ul>
+                </div>
+            </div>
+            <div class="col-md-12 backhead">
+
+            </div>
+        </div>
+    </header>
+
+    <body>
+
+      <div class="row contact">
+        <div class="col-md-6 copyright">
+          <h5>2112 Supapedo Man Street</h5>
+          <h5>616-867-5309</h5>
+          <h5>MarvelBigTime@bobbin.usa</h5>
+        </div>
+        <div class="col-md-6">
+          <ul class="social"> Social Media
+            <li><a href="https://twitter.com/?lang=en"><img src="http://goinkscape.com/wp-content/uploads/2015/07/twitter-logo-final.png"></a></li>
+            <li><a href="https://www.facebook.com/"><img src="https://images.seeklogo.net/2016/09/facebook-icon-preview.png"></a></li>
+            <li><a href="https://plus.google.com/"><img src="https://lh3.googleusercontent.com/hLPM2HpqWB_dfc-Q-bYYxQz4V7PuN_-Pl6VDjMPFyV7bsHFmYbGNiuALrBg_i5cbZHkOtOUNnB92tbs=s1664-no"></a></li>
+          </ul>
+        </div>
+      </div>
+
+        <div class="mapbox">
+          <h3>Visit Us!</h3>
+        <div id="map">
+        </div>
+      </div>
+        <script>
+            function initMap() {
+                var uluru = {
+                    lat: 41.84201,
+                    lng: -89.485937
+                };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 4,
+                    center: uluru
+                });
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyW90Y36KVbWyAjfSBwuEMSeTXrgXF0N0&callback=initMap">
+        </script>
+    </body>
+    <footer class="row">
+        <div class="col-md-6 featured">
+            BIG TIME LITTLE TIME GIG ©
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="contact.js"></script>
+</body>
+
+</html>
